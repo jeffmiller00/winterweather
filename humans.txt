@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jeff Miller -- Littles Software Engineer -- @couchchamp
 
 # THANKS
 
-    <name>
+    All the other fellow littles.
 
 # TECHNOLOGY COLOPHON
 
