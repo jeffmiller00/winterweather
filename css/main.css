@@ -5,6 +5,7 @@
 .tagline {
   color: #999;
   font-style: italic;
+  float: right;
 }
 
 .right {
