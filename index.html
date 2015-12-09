@@ -139,44 +139,9 @@
     <script src="js/vendor/zabuto_calendar.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.min.css">
 
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- initialize the calendar on ready -->
     <script type="application/javascript">
-      var eventData = [
-        {
-          "date":"2015-12-18",
-          "badge":false,
-          "title":"Winter Weather Can Begin",
-          'classname':'cold-1'},
-        {
-          "date":"2015-12-19",
-          "badge":false,
-          "title":"Winter Weather Can Begin",
-          'classname':'cold-1'},
-        {
-          "date":"2015-12-20",
-          "badge":false,
-          "title":"Winter Weather Can Begin",
-          'classname':'cold-1'},
-        {
-          "date":"2015-12-25",
-          "badge":false,
-          "title":"Leaning to cold rain w/ ice at the start, hoping for a white Xmas",
-          'classname':'cold-2'},
-        {
-          "date":"2015-12-31",
-          "badge":false,
-          "title":'Snow to ice to rain type event 1" - 3" of snow',
-          'classname':'cold-3'},
-/*
-        {
-          "date":"2015-12-10",
-          "badge":true,
-          "title":"Tonight",
-          "body":"<p class=\"lead\">Party<\/p><p>Like it's 1999.<\/p>",
-          "footer":"At Paisley Park",
-          "classname":"purple-event"},
-*/
-      ];
       /*
 type  string  The display type. Values 'text', 'block', 'list' and 'spacer' are allowed.
 label string  Label. Required for display type 'text', optional for 'block'. Not used for 'list' or 'spacer'.
@@ -209,8 +174,11 @@ list  array Array of css classnames for the list of blocks for type 'list'.
             cell_border: true,
             today: true,
             weekstartson: 0,
-            data: eventData,
             legend: legendData,
+            ajax: {
+              url: "show_data.php",
+              modal: true
+            },
           });
       });
     </script>
